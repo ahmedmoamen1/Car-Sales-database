@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Filter</title>
+  <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0069d9;
+        }
+
+        .content {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .table-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .table {
+            width: 48%;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table th, table td {
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        table th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Filter</h1>
+        <form method="GET" action="/">
+        <button type="submit">Go back to homepage</button>
+        </form>
+        <form method="POST" action="/Search0">
+            <label for="Make">Make</label>
+            <input type="text" id="Make" name="Make"><br><br>
+            <label for="Year">Year</label>
+            <input type="number" id="Year" name="Year"><br><br>
+            <label for="Location">Location</label>
+            <input type="text" id="Location" name="Location"><br><br>
+            <label for="BodyType">Body Type</label>
+            <input type="text" id="BodyType" name="BodyType"><br><br>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <div>
+      {% if table1 %}
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Make</th>
+                    <th>Model</th>
+                    <th>Year</th>
+                    <th>Phone</th>
+                    <th>KM range Low</th>
+                    <th>KM range High</th>
+                    <th>Price</th>
+                    <th>Body Type</th>
+                    <th>Fuel Type</th>
+                    <th>Location</th>
+                    <th>Payment Method</th>
+                    <th>Color</th>
+                    <th>Engine CC range Low</th>
+                    <th>Engine CC range High</th>
+                    <th>Transmission</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in table1 %}
+                    <tr>
+                        {% for column in row %}
+                            <td>{{ column }}</td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+      {% endif %}
+      {% if table2 %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Make</th>
+                    <th>Average Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in table2 %}
+                    <tr>
+                        {% for column in row %}
+                            <td>{{ column }}</td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+      {% endif %}
+    </div>
+</body>
+</html>

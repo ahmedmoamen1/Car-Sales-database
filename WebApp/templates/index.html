@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Car Sales Website</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+			margin: 0;
+		}
+
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+			color: #555;
+		}
+
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			margin-top: 50px;
+		}
+
+		.button {
+			display: block;
+			padding: 15px 20px;
+			margin: 20px;
+			font-size: 20px;
+			font-weight: bold;
+			color: #fff;
+			text-align: center;
+			background-color: #4CAF50;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+			transition: background-color 0.3s ease-in-out;
+		}
+
+		.button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<h1>Welcome to our Car Sales Website</h1>
+	<div class="container">
+		<a href="/register" class="button">Register</a>
+		<a href="/Sale_page" class="button">Buy a Car</a>
+		<a href="/view_reviews" class="button">View Existing Reviews of a Given Ad</a>
+		<a href="/view_rating" class="button">View Aggregated Rating of a Seller/Owner</a>
+		<a href="/show_ads" class="button">Show All the Ads for a Given Car Make, Body Type, and Year in a Specific Location/Area, Along with the Average Price and the Number of Listings for Each Model</a>
+		<a href="show_used_cars" class="button">Show All the Used Cars in a Certain Location in a Given Price Range, with a Given Set of Features</a>
+		<a href="/top_areas" class="button">Show the Top 5 Areas in Cairo by Amount of Inventory and Average Price for a Given Make/Model</a>
+		<a href="/top_sellers" class="button">Show the Top 5 Sellers by the Amount of Listings They Have, Along with Their Average Price per Year</a>
+		<a href="/show_properties" class="button">Show All the Properties Listed by a Specific Owner (Given Their First and Last Name and/or Phone Number)</a>
+		<a href="/top_cars" class="button">Show the Top 5 Make/Model Cars by the Amount of Inventory and Their Average Price for a Given Year Range</a>
+	</div>
+</body>
+</html>

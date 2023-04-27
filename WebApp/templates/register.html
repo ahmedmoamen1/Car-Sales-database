@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+			margin: 0;
+			padding: 0;
+		}
+		form {
+			background-color: #fff;
+			padding: 20px;
+			margin: 50px auto;
+			max-width: 500px;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+		}
+		h1 {
+			text-align: center;
+			margin-bottom: 20px;
+			color: #4CAF50;
+		}
+		label {
+			display: block;
+			margin-bottom: 5px;
+			font-weight: bold;
+		}
+		input[type="text"], input[type="email"], input[type="password"], select {
+			width: 100%;
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			margin-bottom: 10px;
+			box-sizing: border-box;
+		}
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			margin-top: 20px;
+		}
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+		.features {
+			margin-bottom: 10px;
+		}
+		.features label, .features input {
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.features input {
+			margin-right: 10px;
+		}
+	</style>
+</head>
+<body>
+    <form method="GET" action="/">
+    <button type="submit">Go back to homepage</button>
+    </form>
+  <form method="POST" action="/signup">
+    <h1>Sign Up</h1>
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender">
+      <option value="" disabled selected>Select your gender</option>
+      <option value="M">Male</option>
+      <option value="F">Female</option>
+    </select>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <div class="car-info">
+      <h2>Car Information:</h2>
+      <div class="car">
+        <label for="make">Make:</label>
+        <input type="text" name="make[]" required>
+        <label for="model">Model:</label>
+        <input type="text" name="model[]" required>
+        <label for="year">Year:</label>
+        <input type="number" name="year[]" required>
+      </div>
+    </div>
+
+    <button type="button" id="add-car">Add another car</button>
+
+    <input type="submit" value="Sign Up">
+  </form>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const addButton = document.getElementById('add-car');
+      addButton.addEventListener('click', function() {
+        const carInfo = document.querySelector('.car-info');
+        const car = document.querySelector('.car').cloneNode(true);
+        carInfo.appendChild(car);
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f4f4f4;
+		}
+
+		form {
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0 0 5px rgba(0,0,0,0.3);
+			margin: 50px auto;
+			width: 400px;
+		}
+
+		h1 {
+			text-align: center;
+			color: #333;
+			margin-bottom: 20px;
+		}
+
+		label {
+			display: block;
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+
+		input[type="email"],
+		input[type="password"] {
+			padding: 10px;
+			border-radius: 3px;
+			border: 1px solid #ccc;
+			width: 100%;
+			margin-bottom: 20px;
+			font-size: 16px;
+			box-sizing: border-box;
+		}
+
+		input[type="submit"] {
+			background-color: #333;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 3px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #555;
+		}
+
+		.error {
+			color: red;
+			font-size: 14px;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+    <form method="GET" action="/">
+    <button type="submit">Go back to homepage</button>
+    </form>
+	<form method="POST" action="/login">
+		<h1>Login</h1>
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" required>
+
+		<input type="submit" value="Login">
+	</form>
+</body>
+</html>

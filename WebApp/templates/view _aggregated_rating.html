@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Seller Rating Lookup</title>
+    <style>
+      /* Styling for the form */
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+      }
+
+      input[type="tel"] {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+        margin-bottom: 15px;
+        width: 300px;
+      }
+
+      button[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        width: 100px;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #0069d9;
+      }
+
+      /* Styling for the rating display */
+      .rating {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        font-size: 48px;
+      }
+
+      .rating span {
+        font-size: 72px;
+        font-weight: bold;
+      }
+
+      .rating p {
+        margin-top: 10px;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Seller Rating Lookup</h1>
+      <form method="GET" action="/">
+    <button type="submit">Go back to homepage</button>
+    </form>
+      <form method="POST" action="/Search00">
+        <label for="phone_number">Enter phone number:</label>
+        <input type="tel" id="phone_number" name="phone_number" placeholder="123-456-7890" required>
+        <button type="submit">Search</button>
+      </form>
+
+      {% if rating is not none %}
+        <div class="rating">
+          <span>{{ rating }}</span>
+          <p>Seller Rating</p>
+        </div>
+      {% endif %}
+    </div>
+  </body>
+</html>
