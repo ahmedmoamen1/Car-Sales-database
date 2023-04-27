@@ -52,6 +52,7 @@ foreign key (AdId) references CarAdvert(AdId)
 CREATE TABLE User_buyer(
 email varchar(50) ,
 username varchar(50) ,
+password varchar(50),
 gender char(1) ,
 Date_of_Birth DATE ,
 primary key(email)
