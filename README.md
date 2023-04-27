@@ -17,3 +17,4 @@ The database has 7 tables:
 - **User_buyer** table stores information about buyers.
 - **User_buyer_intCars** table stores information about cars that a buyer is interested in.
 - **Purchase** table stores information about car purchases made by buyers.
+m
