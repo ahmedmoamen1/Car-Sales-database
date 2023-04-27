@@ -1,5 +1,7 @@
 # Car-Sales-database
 
+## Getting Started
+
 ## Database Schema
 
 The database has 7 tables:
