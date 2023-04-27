@@ -2,6 +2,10 @@
 
 ## Getting Started
 
+```bash
+git clone https://github.com/username/repo.git
+
+
 ## Database Schema
 
 The database has 7 tables:
