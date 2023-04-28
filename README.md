@@ -49,3 +49,27 @@ This program extracts data from a website using web scraping techniques. It uses
 3. The program will prompt you to enter a URL. Enter the URL of the website you want to scrape.
 4. The program will then extract the data and save it to a CSV file.
 
+## Webapp and databse connection
+
+### SQL Reader code
+
+The application provides the following functionalities:
+
+- Register new users
+- Add new car advertisements
+- Purchase cars
+- View car reviews and ratings
+- Filter car advertisements by features and location
+- View top 5 locations for a specific car make and model
+
+### WebPage
+
+1. Run the application with `python main.py`.
+2. Navigate to `http://localhost:5000` in your web browser.
+3. Register an account or log in with an existing account.
+4. Search for cars using the search form on the home page.
+6. View a seller's inventory by clicking on their name.
+7. Leave a review or rating for a car you purchased by clicking on the "Add a review" button on the car's page.
+
+
+
