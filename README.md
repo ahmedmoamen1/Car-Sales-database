@@ -2,9 +2,15 @@
 
 ## Getting Started
 
+Use Terminal
 ```bash
-git clone https://github.com/username/repo.git
+git clone https//:www.github.com:ahmedmoamen1/Car-Sales-database.git
+touch Car-Sales-database
 ```
+Through github download code
+
+##Libraries
+
 
 ## Database Schema
 
