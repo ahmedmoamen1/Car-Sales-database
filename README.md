@@ -37,4 +37,15 @@ The database has 7 tables:
 - **User_buyer** table stores information about buyers.
 - **User_buyer_intCars** table stores information about cars that a buyer is interested in.
 - **Purchase** table stores information about car purchases made by buyers.
-m
+
+## Populateing the database
+
+This program extracts data from a website using web scraping techniques. It uses the BeautifulSoup library for parsing HTML and the Requests library for making HTTP requests. It also uses the Selenium library to handle dynamically generated content and to perform actions on the webpage. The program extracts numerical data from the website and saves it to a CSV file. 
+
+## How to use
+
+1. Make sure you have the required libraries installed (BeautifulSoup, Requests, Selenium, Pandas).
+2. Run the program by executing the following command: `python program_name.py`
+3. The program will prompt you to enter a URL. Enter the URL of the website you want to scrape.
+4. The program will then extract the data and save it to a CSV file.
+
