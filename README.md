@@ -42,7 +42,7 @@ The database has 7 tables:
 
 This program extracts data from a website using web scraping techniques. It uses the BeautifulSoup library for parsing HTML and the Requests library for making HTTP requests. It also uses the Selenium library to handle dynamically generated content and to perform actions on the webpage. The program extracts numerical data from the website and saves it to a CSV file. 
 
-## How to use
+### How to use
 
 1. Make sure you have the required libraries installed (BeautifulSoup, Requests, Selenium, Pandas).
 2. Run the program by executing the following command: `python program_name.py`
