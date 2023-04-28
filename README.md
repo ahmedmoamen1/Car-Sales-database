@@ -21,7 +21,6 @@ Must download the follwoing libraries:
 - selenium-stealth 
 - mysql-connector-python 
 - flask
-- Code:
 ```bash
 pip install beautifulsoup4 requests pandas selenium selenium-stealth mysql-connector-python flask
 ```
