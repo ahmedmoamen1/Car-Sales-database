@@ -3,7 +3,8 @@
 ## Getting Started
 Make sure you follow the conditions:
 
-- Use Terminal```bash
+- Use Terminal
+```bash
 git clone https//:www.github.com:ahmedmoamen1/Car-Sales-database.git
 touch Car-Sales-database
 ```
