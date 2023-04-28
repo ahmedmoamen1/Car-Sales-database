@@ -1,16 +1,25 @@
 # Car-Sales-database
 
 ## Getting Started
+Make sure you follow the conditions:
 
-Use Terminal
-```bash
+- Use Terminal```bash
 git clone https//:www.github.com:ahmedmoamen1/Car-Sales-database.git
 touch Car-Sales-database
 ```
-Through github download code
+-Through github download code
+-Create mysql Databse server through any hosting website.(https://www.freemysqlhosting.net/)
+-Or localhost by downloading a sql server and mysql workbench
 
-##Libraries
-
+## Libraries
+Must download the follwoing libraries:
+-beautifulsoup4 
+-requests 
+-pandas 
+-selenium 
+-selenium-stealth 
+-mysql-connector-python 
+-flask
 
 ## Database Schema
 
